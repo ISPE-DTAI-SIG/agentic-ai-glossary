@@ -61,7 +61,7 @@ kbd { padding: .1rem .45rem; border: 1px solid var(--line); border-radius: 4px; 
 .definition-note a { color: var(--teal-dark); font-weight: 650; }
 
 .about { margin-top: 4.5rem; padding: 3rem 0 2rem; border-top: 1px solid var(--line); }
-.about-copy { max-width: 830px; }
+.about-copy { width: 100%; }
 .about h2 { margin: 0 0 1rem; font-size: 2rem; }.about h3 { margin-top: 0; }
 .citation-block { margin-top: 2rem; padding: 1.5rem 1.75rem; background: #f8f9fb; border: 1px solid var(--line); border-left: 4px solid var(--teal); }
 .citation-block h3 { margin-bottom: .35rem; color: var(--teal-dark); font-family: var(--sans); font-size: .85rem; letter-spacing: .045em; text-transform: uppercase; }
