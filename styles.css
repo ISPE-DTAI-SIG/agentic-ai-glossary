@@ -55,6 +55,10 @@ kbd { padding: .1rem .45rem; border: 1px solid var(--line); border-radius: 4px; 
 .why { margin: 0; color: #30445f; }
 .why strong { color: var(--teal-dark); }
 .result-count, .empty { padding: 1.5rem; text-align: center; color: var(--muted); }
+.definition-note { margin-top: 1rem; padding: 1.35rem 1.5rem; border-left: 3px solid var(--line); color: var(--muted); font-size: .88rem; }
+.definition-note h3 { margin: 0 0 .4rem; color: var(--navy); font-family: var(--sans); font-size: .75rem; letter-spacing: .06em; text-transform: uppercase; }
+.definition-note p { max-width: 1000px; margin: 0; }
+.definition-note sup { color: var(--teal-dark); font-weight: 700; }
 
 .about { margin-top: 4.5rem; padding: 3rem 0 2rem; border-top: 1px solid var(--line); }
 .about-copy { max-width: 830px; }
