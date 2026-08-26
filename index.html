@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A searchable glossary of agentic AI terms for pharmacoepidemiologists, based on Table 1 of the companion paper.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2246%22 fill=%22%23007f8b%22/><text x=%2250%22 y=%2265%22 text-anchor=%22middle%22 font-size=%2245%22 fill=%22white%22>AI</text></svg>">
+  <title>Agentic AI Glossary | ISPE DTAI SIG</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#glossary">Skip to glossary</a>
+  <header class="site-header">
+    <a class="brand" href="#top">Agentic AI <span>· Pharmacoepidemiology</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#glossary">Glossary</a>
+      <a href="#about">About the paper</a>
+      <a class="source-link" href="https://github.com/ISPE-DTAI-SIG/agentic-ai-glossary">View source on GitHub</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <h1 id="page-title">A shared vocabulary<br>for agentic AI</h1>
+        <p>Plain-language definitions from Table 1, with context for pharmacoepidemiology.</p>
+      </div>
+      <div class="system-mark" aria-hidden="true">
+        <span class="node node-a"></span><span class="node node-b"></span>
+        <span class="node node-c"></span><span class="node node-d"></span>
+        <span class="orbit"></span><span class="core">AI</span>
+      </div>
+    </section>
+
+    <section id="glossary" class="glossary" aria-labelledby="glossary-title">
+      <h2 id="glossary-title" class="visually-hidden">Glossary</h2>
+      <label class="search" for="search-input">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16.2 16.2 4.3 4.3"></path></svg>
+        <span class="visually-hidden">Search terms and definitions</span>
+        <input id="search-input" type="search" placeholder="Search terms and definitions" autocomplete="off">
+        <kbd>/</kbd>
+      </label>
+
+      <div id="category-filters" class="filters" aria-label="Filter glossary by category"></div>
+
+      <div class="browse-row">
+        <span>Browse by first letter:</span>
+        <div id="letter-filters" class="letters" aria-label="Filter glossary by first letter"></div>
+      </div>
+
+      <div class="list-heading" aria-hidden="true">
+        <span>Term</span><span>Definition &amp; why it matters</span>
+      </div>
+      <div id="results" class="results" aria-live="polite"></div>
+      <p id="empty-state" class="empty" hidden>No glossary terms match your search.</p>
+      <p id="result-count" class="result-count"></p>
+    </section>
+
+    <section id="about" class="about" aria-labelledby="about-title">
+      <div>
+        <h2 id="about-title">About the paper</h2>
+        <p><cite>Introduction to Concepts in Artificial Intelligence and Machine Learning for Pharmacoepidemiologists: Agentic AI</cite> introduces key concepts across AI and machine learning, agents, agentic capabilities, and evaluation and governance. This companion glossary reflects the terms and definitions in Table 1 of the draft manuscript.</p>
+      </div>
+      <aside>
+        <h3>Using this resource</h3>
+        <p>Search across terms, definitions, and relevance to pharmacoepidemiology. Filter by category or initial letter. Definitions are reproduced from the manuscript draft and may change during peer review.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <strong>ISPE DTAI SIG</strong>
+    <p>A companion resource from the Digital &amp; Technology Advancement in Public Health Special Interest Group.</p>
+    <a href="https://github.com/ISPE-DTAI-SIG">GitHub organization</a>
+  </footer>
+</body>
+</html>
