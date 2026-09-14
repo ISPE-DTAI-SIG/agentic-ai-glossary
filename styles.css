@@ -13,7 +13,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; color: var(--ink); background: var(--white); font-family: var(--sans); line-height: 1.55; }
+body { margin: 0; padding-top: 45px; color: var(--ink); background: var(--white); font-family: var(--sans); line-height: 1.55; }
 a { color: var(--navy); text-underline-offset: .2em; }
 button, input { font: inherit; }
 .skip-link { position: fixed; top: .5rem; left: .5rem; z-index: 10; padding: .65rem 1rem; background: var(--navy); color: white; transform: translateY(-150%); }
@@ -27,8 +27,9 @@ nav a { text-decoration: none; padding-block: 1.55rem; }
 nav a:hover, nav a:focus-visible { color: var(--teal-dark); }
 .source-link::before { content: "↗"; margin-right: .35rem; color: var(--teal); }
 
-.development-banner { display: flex; align-items: baseline; gap: 1rem; margin-top: 1.5rem; padding: .85rem 1rem; border: 1px solid #e3bcc6; border-left: 4px solid var(--teal); color: var(--ink); background: var(--white); font-size: .88rem; }
-.development-banner strong { flex: none; color: var(--teal-dark); }
+.development-banner { position: fixed; top: 0; left: 0; z-index: 100; width: 100%; min-height: 45px; border-bottom: 1px solid #d7a923; color: #392c08; background: #f9df86; box-shadow: 0 2px 8px rgba(57, 44, 8, .12); font-size: .88rem; }
+.development-banner__inner { display: flex; align-items: baseline; gap: 1rem; width: min(1180px, calc(100% - 3rem)); margin-inline: auto; padding: .72rem 0; }
+.development-banner strong { flex: none; color: #5e4300; }
 .development-banner p { margin: 0; }
 
 .hero { min-height: 400px; display: flex; align-items: center; padding: 4.6rem 0 4.3rem; }
@@ -76,9 +77,11 @@ footer p { margin: 0; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
 @media (max-width: 760px) {
+  body { padding-top: 72px; }
   .site-header, main, footer { width: min(100% - 2rem, 1180px); }
   .site-header { min-height: 66px; }.brand span, nav a:not(.source-link) { display: none; } nav { gap: 0; }
-  .development-banner { align-items: flex-start; flex-direction: column; gap: .2rem; margin-top: 1rem; }
+  .development-banner { min-height: 72px; }
+  .development-banner__inner { align-items: flex-start; flex-direction: column; gap: .15rem; width: min(100% - 2rem, 1180px); padding: .55rem 0; }
   .hero { min-height: 0; padding: 3.5rem 0 3rem; }
   h1 { font-size: clamp(2.3rem, 10.5vw, 3.3rem); }
   h1 span { font-size: .57em; letter-spacing: -.035em; }
