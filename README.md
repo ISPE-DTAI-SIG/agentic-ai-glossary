@@ -4,6 +4,10 @@ A searchable companion glossary for *Introduction to Concepts in Artificial Inte
 
 The glossary reproduces the terms, plain-language definitions, and pharmacoepidemiology context from Table 1 of the draft manuscript. It is a static site with no build step and is deployable directly to GitHub Pages.
 
+## Published glossary
+
+Visit the live [Agentic AI Glossary for Pharmacoepidemiology](https://ispe-dtai-sig.github.io/agentic-ai-glossary/).
+
 ## Local preview
 
 ```sh
